@@ -23,6 +23,9 @@
     "pages/ucenter/feedback/feedback",
     "pages/ucenter/location/location"
   ],
+  "description": {
+    "description": "设置头部的颜色"
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarTitleText": "WeChat",

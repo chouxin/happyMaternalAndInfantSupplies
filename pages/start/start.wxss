@@ -57,6 +57,11 @@ page{
   50% {opacity: 1;}
   100% {opacity: 1;transform: translate3d(0,450rpx,0);}
 }
+.bd-new{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 .title{
   position: absolute;
   top: 30rpx;
@@ -154,7 +159,7 @@ page{
 }
 
 .confirm-btn {
-  margin: 61.8% 30% 0;
+  margin: 108.8% 30% 0;
 }
 .confirm-btn:active {
   opacity: .8;

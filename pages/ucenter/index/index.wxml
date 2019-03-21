@@ -118,7 +118,7 @@
     <wxc-button type="danger" value="重新授权登录" bindclick="relogin"></wxc-button>
   </view>
 
-  <view class="version" style='margin-top:10rpx;font-size:18rpx;'>Copyright © 2017-2018 qindiandadudu(GitHub ID)</view>
+  <view class="version" style='margin-top:10rpx;font-size:18rpx;'>Copyright © 2019-2020 qiuxin(GitHub ID)</view>
   <view class='version' style='height:20rpx;line-height:20rpx;font-size:16rpx;font-style: oblique;'>Powered by EastWorld v {{version}}</view>
   <view style="height:12rpx;width:100%;"></view>
 </view>

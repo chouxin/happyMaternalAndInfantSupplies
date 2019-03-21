@@ -219,8 +219,8 @@ App({
     bgBlue: 180,
     userInfo: null,
     subDomain: "qiuxin",// 商城后台个性域名tgg
-    version: "2.0.6",
-    shareProfile: '   一流的服务，做超新鲜的水果' // 首页转发的时候术语
+    version: "1.0.0",
+    shareProfile: '   专业的服务，给宝宝专业的呵护' // 首页转发的时候术语
   }
   // 根据自己需要修改下单时候的模板消息内容设置，可增加关闭订单、收货时候模板消息提醒
 })

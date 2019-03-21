@@ -1,12 +1,12 @@
 {
-  "name": "时刻到家",
-  "description": "时刻零售超市",
-  "version": "2.0.6",
+  "name": "happy母婴",
+  "description": "母婴用品",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": ""
   },
-  "author": "qindiandadudu",
+  "author": "qiuxin",
   "license": "MIT",
   "dependencies": {
     "@minui/wxc-abnor": "^1.0.7",

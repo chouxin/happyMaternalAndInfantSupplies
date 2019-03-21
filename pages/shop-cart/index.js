@@ -209,7 +209,7 @@ Page({
         },
         success: function (res) {
           carShopBeanStores = res.data.data.basicInfo.stores;
-          console.log(' currnet good id and stores is :', carShopBean.goodsId, carShopBeanStores)
+          console.log(' currnet good id and stores is1 :', carShopBean.goodsId, carShopBeanStores)
           if (parseInt(e.detail.value) < carShopBeanStores) {
             list[parseInt(index)].number = parseInt(e.detail.value);
             that.setGoodsList(that.getSaveHide(), that.totalPrice(), that.allSelect(), that.noSelect(), list);
@@ -240,7 +240,6 @@ Page({
         },
         success: function (res) {
           carShopBeanStores = res.data.data.basicInfo.stores;
-          console.log(' currnet good id and stores is :',carShopBean.goodsId, carShopBeanStores)
           if (list[parseInt(index)].number < carShopBeanStores) {
             list[parseInt(index)].number++;
             that.setGoodsList(that.getSaveHide(), that.totalPrice(), that.allSelect(), that.noSelect(), list);

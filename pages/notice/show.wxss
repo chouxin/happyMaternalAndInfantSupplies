@@ -8,3 +8,10 @@
   font-size: 30rpx;
   margin-bottom: 30rpx;
 }
+.title-new{
+  color:black;
+  font-weight: bold;
+  font-size: 35rpx;
+  margin: 2%;
+  text-align: center;
+}
