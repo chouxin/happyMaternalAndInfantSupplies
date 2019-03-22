@@ -6,7 +6,7 @@
       <view class='shop-words'>
         <view class="welcome-ellipsis">欢迎光临！</view>
         <view class="delivery-ellipsis">
-          <wxc-elip line='2'> {{shopDelivery}} </wxc-elip>
+          <wxc-elip line='3'> {{shopDelivery}} </wxc-elip>
         </view>
       </view>
       <view class='clock'>

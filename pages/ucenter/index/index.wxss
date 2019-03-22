@@ -199,3 +199,22 @@ page {
 	font-size: 24rpx;
 	text-align: center;  
 }
+.showPhoneNum {
+  position:relative;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:10px;
+  padding-right:10px;
+  box-sizing:border-box;
+  font-size:15px;
+  text-align:center;
+  text-decoration:none;
+  line-height:2.55555556;
+  border-radius:5px;
+  -webkit-tap-highlight-color:transparent;
+  overflow:hidden;
+  color:#000000;
+  background-color:#F8F8F8;
+
+}

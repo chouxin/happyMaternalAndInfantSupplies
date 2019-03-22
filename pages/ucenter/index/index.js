@@ -76,6 +76,7 @@ Page({
     })
   },
   getPhoneNumber: function (e) {
+    console.log(e)
     if (!e.detail.errMsg || e.detail.errMsg != "getPhoneNumber:ok") {
       console.log(e.detail.errMsg)
       wx.showModal({
@@ -94,6 +95,8 @@ Page({
         iv: e.detail.iv
       },
       success: function (res) {
+        console.log("绑定手机号--")
+        console.log(res)
         if (res.data.code == 0) {
           wx.showToast({
             title: '绑定成功',

@@ -6,9 +6,9 @@
 .shopname{
   margin-left: 20rpx;
   width: 90%;
-  height: 60rpx;
-  padding-top: 40rpx;
-  font-size: 32rpx;
+  height: 100rpx;
+  padding-top: 25rpx;
+  font-size: 28rpx;
   align-items: center;
 }
 

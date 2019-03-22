@@ -7,12 +7,12 @@
         <text class="userinfo-nickname">{{ userInfo.nickName }}</text>
         <view style='height:10rpx;'></view>
         <!-- 部分未通过认证的开发者无权限获得用户绑定电话信息，故暂时隐藏此功能。具体可见微信官方https://developers.weixin.qq.com/miniprogram/dev/api/getPhoneNumber.html -->
-        <!--<wxc-label wx:if="{{userMobile}}" class="phoneNumber" type='fill' type-color="#747ba1">
-            {{userMobile}}
-          </wxc-label>
-          <button wx:else class="pin-phoneNumber" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" size='min'>
-            点击绑定手机号码
-          </button>-->
+        <!--<wxc-label wx:if="{{userMobile}}" class="phoneNumber" type='fill' type-color="#747ba1">-->
+            <!--{{userMobile}}-->
+          <!--</wxc-label>-->
+          <!--<button wx:else class="pin-phoneNumber" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" size='min'>-->
+            <!--点击绑定手机号码-->
+          <!--</button>-->
       </view>
 
     </view>
@@ -114,7 +114,13 @@
     </view>
   </view>
   <view style="height:20rpx;width:100%;"></view>
-  <view class="my-item" style='border:none;padding:0rpx;margin:0rpx;background:none;border:none;height:auto;line-height:auto;'>
+  <view wx:if="{{userMobile}}" class="showPhoneNum">
+    {{userMobile}}
+  </view>
+  <view wx:if="{{!userMobile}}">
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">绑定手机号码</button>
+  </view>
+  <view class="showPhoneNum" >
     <wxc-button type="danger" value="重新授权登录" bindclick="relogin"></wxc-button>
   </view>
 

@@ -24,7 +24,9 @@
     "pages/ucenter/location/location"
   ],
   "description": {
-    "description": "设置头部的颜色"
+    "description": "设置头部的颜色",
+    "navigationBarBackgroundColor": "导航栏背景色",
+    "backgroundColor": "#00afb4"
   },
   "window":{
     "backgroundTextStyle":"light",
