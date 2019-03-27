@@ -26,14 +26,14 @@
   "description": {
     "description": "设置头部的颜色",
     "navigationBarBackgroundColor": "导航栏背景色",
-    "backgroundColor": "#00afb4"
+    "backgroundColor": "背景色"
   },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black",
-    "navigationBarBackgroundColor": "#00afb4",
-    "backgroundColor": "#00afb4"
+    "navigationBarBackgroundColor": "#A3E7FA",
+    "backgroundColor": "#C5F1FF"
   },
   "tabBar": {
     "color": "#929292",
