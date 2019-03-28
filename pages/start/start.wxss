@@ -145,7 +145,7 @@ page{
 }
 
 .bd {
-  position: relative;
+  position: absolute;
   flex: 1;
   display: flex;
   flex-direction: column;
