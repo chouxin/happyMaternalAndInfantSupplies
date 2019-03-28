@@ -30,10 +30,10 @@
   },
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "Happy",
     "navigationBarTextStyle":"black",
-    "navigationBarBackgroundColor": "#A3E7FA",
-    "backgroundColor": "#C5F1FF"
+    "navigationBarBackgroundColor": "#2083ff",
+    "backgroundColor": "#30b0ff"
   },
   "tabBar": {
     "color": "#929292",
