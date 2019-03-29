@@ -9,18 +9,23 @@
     }
   }
   .notice {
+    width: 270px;
     display: flex;
     position: relative;
-    height: 70rpx;
-    padding: 0 24rpx 0 30rpx;
+    height: 35rpx;
+    padding-top: 0rpx;
+    padding-left: 0rpx;
+    padding-right: 0rpx;
+    padding-bottom: 0rpx;
     align-items: center;
+    margin-top: 15rpx;
 }
   .notice {}
   .notice__icon {
     display: block;
     width: 36rpx;
     height: 30rpx;
-    line-height: 30rpx;
+    line-height: 18rpx;
     margin-right: 12rpx;
 }
   .notice__text {
