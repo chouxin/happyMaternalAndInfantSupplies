@@ -31,8 +31,8 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarTitleText": "Happy",
-    "navigationBarTextStyle":"black",
-    "navigationBarBackgroundColor": "#2083ff",
+    "navigationBarTextStyle":"white",
+    "navigationBarBackgroundColor": "#178FF7",
     "backgroundColor": "#30b0ff"
   },
   "tabBar": {

@@ -213,7 +213,7 @@ App({
     onLoadStatus: true,
     activeCategoryId: null,
 
-    globalBGColor: '#00afb4',
+    globalBGColor: '#6EBFFA',
     bgRed: 0,
     bgGreen: 175,
     bgBlue: 180,
