@@ -6,6 +6,6 @@
         {{value && decimal !== 'small' ? value : ''}}
 
         <text wx:if="{{value && decimal === 'small'}}">{{value}}</text>
-        <text wx:if="{{value && decimal === 'small'}}" class="count__decimal--small">.{{decimalNum}}</text>
+        <!-- <text wx:if="{{value && decimal === 'small'}}" class="count__decimal--small">.{{decimalNum}}</text> -->
     </view>
 </view>

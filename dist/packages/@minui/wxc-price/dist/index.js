@@ -65,39 +65,39 @@ export default Component({
     if (this.data.value) {
       let value = this.data.value;
 
-      switch (this.data.decimal) {
+      // switch (this.data.decimal) {
 
-        // 保留一位小数
-        case '1':
-          {
-            value = getDecimal(this.data.value, 1);
-            break;
-          }
+      //   // 保留一位小数
+      //   case '1':
+      //     {
+      //       value = getDecimal(this.data.value, 1);
+      //       break;
+      //     }
 
-        // 只显示整数
-        case 'none':
-          {
-            value = parseInt(this.data.value);
-            break;
-          }
+      //   // 只显示整数
+      //   case 'none':
+      //     {
+      //       value = parseInt(this.data.value);
+      //       break;
+      //     }
 
-        // 小数部分缩小
-        case 'small':
-          {
-            value = parseInt(this.data.value).toString().trim();
+      //   // 小数部分缩小
+      //   case 'small':
+      //     {
+      //       value = parseInt(this.data.value).toString().trim();
 
-            this.setData({
-              decimalNum: (this.data.value.toString().split('.')[1] || '00').trim()
-            });
-            break;
-          }
-        default:
-          {
-            value = getDecimal(this.data.value, 2);
-            break;
-          }
+      //       this.setData({
+      //         decimalNum: (this.data.value.toString().split('.')[1] || '00').trim()
+      //       });
+      //       break;
+      //     }
+      //   default:
+      //     {
+      //       value = getDecimal(this.data.value, 2);
+      //       break;
+      //     }
 
-      }
+      // }
 
       this.setData({
         value: value
