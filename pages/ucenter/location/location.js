@@ -71,8 +71,8 @@ Page({
   data: {
     clock: '',
     isLocation:false,
-    tglatitude: 30.471008,
-    tglongitude: 106.640344,
+    tglatitude: 30.465385,
+    tglongitude: 106.633607,
     latitude: 0,
     longitude: 0,
     markers: [],
@@ -227,7 +227,8 @@ Page({
         oriCovers.push(newCover);
         console.log("oriCovers----------")
         console.log(oriCovers);
-
+        console.log("店铺维度-：" + that.data.tglatitude)
+        console.log("店铺经度-：" + that.data.tglongitude)
         that.setData({
           latitude: that.data.tglatitude,//res.latitude,
           longitude: that.data.tglongitude,//res.longitude,

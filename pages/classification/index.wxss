@@ -108,7 +108,7 @@ page {
 
 .classify-container {
   width: 180rpx;
-  background: #ECECEC;
+  background: #F4F8F7;
   height: 100%;
 }
 
@@ -119,14 +119,16 @@ page {
 
 .classify-container .classify.active {
   background: #fff;
-  border-left: 4rpx solid #FF5777;
+  border-left: 5rpx solid #178FF7;
   border-top: 1rpx solid #EFEFEF;
   border-bottom: 1rpx solid #EFEFEF;
 }
 
 .classify-container .classify .name {
   display: inline-block;
-  font-size: 28rpx;
+  font-family: PingFangSC-Medium, sans-serif;
+  font-size: 26rpx;
+  letter-spacing: 3rpx;
   color: #646464;
   line-height: 1.2;
   text-align: left;
@@ -134,7 +136,7 @@ page {
 }
 
 .classify-container .classify .name.active {
-  color: #FF5777;
+  color: #178FF7;
   font-weight: bold;
 }
 
@@ -183,8 +185,9 @@ page {
 
 .goods-container .goods .name {
   color: #000;
+  font-family: PingFangSC-Semibold, sans-serif;
+  letter-spacing: 3rpx;
   font-size: 28rpx;
-  font-weight: bold;
   line-height: 46rpx;
 }
 
@@ -208,7 +211,7 @@ page {
 }
 
 .goods-container .goods .soldInfo .good-price-box .price {
-  color: #ff4422;
+  color: #ffa200;
   margin-top: 10rpx;
   width: 120rpx;
   font-size: 28rpx;

@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "发现另一个世界",
-  "navigationBarBackgroundColor": "#69C3AA",
+  "navigationBarBackgroundColor": "#178FF7",
   "usingComponents": {
     "wxc-icon": "../../dist/packages/@minui/wxc-icon/dist/index",
     "wxc-loadmore": "../../dist/packages/@minui/wxc-loadmore/dist/index",

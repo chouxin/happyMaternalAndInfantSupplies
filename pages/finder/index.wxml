@@ -3,9 +3,9 @@
 <import src="../../templates/recommend-goods-item/recommend-goods-item.wxml" />
 <import src="../../templates/wxSearch/wxSearch.wxml" />
 
-<view class="container" style='background: -webkit-linear-gradient(top, rgba({{bgRed}},{{bgGreen}},{{bgBlue}}, 1), rgba({{bgRed}},{{bgGreen}},{{bgBlue}}, 0.7));'>
+<view class="container" style="background: -webkit-linear-gradient(#178FF7,{{background_color}},#30b0ff)">
 
-  <view class="search-view" style="background:-webkit-linear-gradient(top, rgba({{bgRed}},{{bgGreen}},{{bgBlue}}, 1), rgba({{bgRed}},{{bgGreen}},{{bgBlue}}, 0.7)); ">
+  <view class="search-view" style="background: -webkit-linear-gradient(#178FF7,{{background_color}},#30b0ff)">
     <view class="serarch-content">
       <view class='search-icon-view'>
         <wxc-icon class='search-icon' type='search-square' size='40' color='#69c3aa'></wxc-icon>

@@ -82,7 +82,7 @@
   width: 130rpx;
   height: 70rpx;
   margin-left: 0;
-  background-color: blueviolet;
+  background-color: #178FF7;
   font-size: 28rpx;
   border-top-left-radius: 0rpx;
   border-bottom-left-radius: 0rpx;

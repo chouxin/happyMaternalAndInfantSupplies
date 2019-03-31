@@ -1,5 +1,5 @@
 <view class="container">
-  <view class='userbox' style='background: -webkit-linear-gradient(top, rgba({{bgRed}},{{bgGreen}},{{bgBlue}}, 1), rgba({{bgRed}},{{bgGreen}},{{bgBlue}}, 0.3))'>
+  <view class='userbox' style="background: -webkit-linear-gradient(#178FF7,{{background_color}},#30b0ff)">
     <view wx:if="{{userInfo}}" class="userinfo">
       <wxc-avatar class="userinfo-avatar" src="{{ userInfo.avatarUrl }}"> </wxc-avatar>
       <view style='width:30rpx;'></view>

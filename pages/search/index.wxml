@@ -2,7 +2,7 @@
 <import src="../../templates/goods-item/index.wxml" />
 <import src="../../templates/wxSearch/wxSearch.wxml" />
 
-<view class="search-view" style="background:{{ scrollTop === 0 ?'-webkit-linear-gradient(top, rgba(105,195,170, 1), rgba(105, 195, 170, 1))' :( scrollTop<200 ? 'rgba(105,195,170,'+(scrollTop/400+0.3) +')' : 'rgba(105,195,170,1)')  }} ">
+<view class="search-view" style="background: -webkit-linear-gradient(#178FF7,{{background_color}},#30b0ff)">
   <view class="serarch-content">
     <view class='search-icon-view'>
         <wxc-icon class='search-icon' type='search-square' size='40' color='#69c3aa'></wxc-icon>
