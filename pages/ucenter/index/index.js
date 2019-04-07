@@ -30,6 +30,8 @@ Page({
     })
 
     let userInfo = wx.getStorageSync('userInfo')
+    console.log("----登录测试---")
+    console.log(userInfo)
     if (!userInfo) {
       wx.navigateTo({
         url: "/pages/authorize/index"

@@ -19,10 +19,24 @@
           <!--<wxc-icon style='margin-left:15rpx;' color="#fff" type="arrow-right"></wxc-icon>-->
         <!--</wxc-button>-->
       <!--</view>-->
-    <wxc-button class="confirm-btn" size='large'
-                btnStyle="width: 282rpx;background: {{background_color}};border-radius: 60rpx;color: #fff;" bindclick='goToIndex'>
-      进入店铺
-      <wxc-icon style='margin-left:15rpx;' color="#fff" type="arrow-right"></wxc-icon>
-    </wxc-button>
+    <view wx:if="{{0==type}}">
+      <button class="confirm-btn"  bindtap="goToIndex">
+        进入店铺
+        <wxc-icon style='margin-left:15rpx;' color="#fff" type="arrow-right"></wxc-icon>
+      </button>
+    </view>
+    <view wx:if="{{1==type}}">
+      <button class="confirm-btn"
+              open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+        进入店铺
+        <wxc-icon style='margin-left:15rpx;' color="#fff" type="arrow-right"></wxc-icon>
+      </button>
+    </view>
+    <view wx:if="{{2==type}}">
+      <button class="confirm-btn"  bindtap="goToIndex">
+        进入店铺
+        <wxc-icon style='margin-left:15rpx;' color="#fff" type="arrow-right"></wxc-icon>
+      </button>
+    </view>
   </block>
 </view>

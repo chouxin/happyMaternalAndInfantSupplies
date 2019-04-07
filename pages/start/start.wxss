@@ -160,7 +160,13 @@ page{
 
 .confirm-btn {
   margin: 108.8% 30% 0;
+  width: 282rpx;
+  hight: 100rpx;
+  background: #6EBFFA;
+  border-radius: 60rpx;
+  color: #fff;
 }
+
 .confirm-btn:active {
   opacity: .8;
 }

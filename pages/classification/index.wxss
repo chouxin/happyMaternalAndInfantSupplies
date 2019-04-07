@@ -214,7 +214,7 @@ page {
   color: #ffa200;
   margin-top: 10rpx;
   width: 120rpx;
-  font-size: 28rpx;
+  font-size: 27rpx;
   font-weight: bold;
   line-height: 40rpx;
 }
