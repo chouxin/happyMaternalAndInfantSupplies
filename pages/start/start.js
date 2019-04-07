@@ -7,19 +7,8 @@ Page({
     angle: 0,
     type: 0
   },
-  goToIndex:function(){
+  getMobile: function() {
     var that = this;
-    //进入店铺前先取得的店铺的授权
-    let userInfo = wx.getStorageSync('userInfo')
-    if (!userInfo) {
-      wx.navigateTo({
-        url: "/pages/authorize/index"
-      })
-    }else {
-      that.setData({
-        type: 1
-      })
-    }
     wx.request({
       url: 'https://api.it120.cc/' + app.globalData.subDomain + '/user/detail',
       data: {
@@ -27,21 +16,45 @@ Page({
       },
       success: function (res) {
         if (res.data.code == 0) {
-          if(res.data.data.base.mobile){
+          if (res.data.data.base.mobile) {
             that.setData({
               type: 2
-            }),
-            wx.switchTab({
-              url: '/pages/classification/index',
-            });
-          }else {
+            })
+          } else {
             that.setData({
               type: 1
             })
           }
         }
+
       }
     })
+  },
+  getAllUserInfo: function(){
+    var that = this;
+    let userInfo = wx.getStorageSync('userInfo')
+    if (!userInfo) {
+      that.setData({
+        type: 0
+      })
+    }else {
+      that.setData({
+        type: 1
+      })
+    }
+    return that.data.type;
+  },
+  goToIndex:function(){
+    var that = this;
+    //进入店铺前先取得的店铺的授权
+    var typee = this.getAllUserInfo();
+    if (0 == typee) {
+      wx.navigateTo({
+        url: "/pages/authorize/index"
+      })
+    }else {
+      this.getMobile();
+    }
   },
   onLoad:function(){
     var that = this
@@ -51,35 +64,31 @@ Page({
       bgGreen: app.globalData.bgGreen,
       bgBlue: app.globalData.bgBlue
     })
-    let userInfo = wx.getStorageSync('userInfo')
-    if (!userInfo) {
+    var typee = this.getAllUserInfo();
+    if (0 == typee) {
       wx.navigateTo({
         url: "/pages/authorize/index"
       })
     }else {
-      that.setData({
-        type: 1
-      })
-    }
-
-    wx.request({
-      url: 'https://api.it120.cc/' + app.globalData.subDomain + '/user/detail',
-      data: {
-        token: wx.getStorageSync('token')
-      },
-      success: function (res) {
-        if (res.data.code == 0) {
-          if(res.data.data.base.mobile){
-            that.setData({
-              type: 2
-            })
-          }
-        }
+      this.getMobile();
+      if(1 == that.data.type){
+        this.getMobile();
       }
-    })
+    }
   },
   onShow:function(){
-    this.onLoad();
+    var that = this;
+    var typee = this.getAllUserInfo();
+    if (0 == typee) {
+      wx.navigateTo({
+        url: "/pages/authorize/index"
+      })
+    }else {
+      this.getMobile();
+      if(1 == that.data.type){
+        this.getMobile();
+      }
+    }
   },
   onReady: function(){
     var that = this;
