@@ -45,16 +45,9 @@ Page({
     return that.data.type;
   },
   goToIndex:function(){
-    var that = this;
-    //进入店铺前先取得的店铺的授权
-    var typee = this.getAllUserInfo();
-    if (0 == typee) {
-      wx.navigateTo({
-        url: "/pages/authorize/index"
-      })
-    }else {
-      this.getMobile();
-    }
+    wx.switchTab({
+      url: '/pages/classification/index',
+    });
   },
   onLoad:function(){
     var that = this
