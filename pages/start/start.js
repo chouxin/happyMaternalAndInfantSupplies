@@ -79,7 +79,7 @@ Page({
     })
   },
   onShow:function(){
-
+    this.onLoad();
   },
   onReady: function(){
     var that = this;
