@@ -2,7 +2,8 @@
   .price__icon,
   .price__count {
     display: inline-block;
-    line-height: 1;
+    line-height: 1rpx;
+    margin-left: 1rpx;
   }
 
   .price__icon--sup,

@@ -186,9 +186,9 @@ page {
 .goods-container .goods .name {
   color: #000;
   font-family: PingFangSC-Semibold, sans-serif;
-  letter-spacing: 3rpx;
+  letter-spacing: 4rpx;
   font-size: 28rpx;
-  line-height: 46rpx;
+  line-height: 40rpx;
 }
 
 .goods-container .goods .soldInfo {
