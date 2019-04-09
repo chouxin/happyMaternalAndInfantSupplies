@@ -6,16 +6,20 @@ function wxpay(app, money, orderId, redirectUrl) {
     nextAction = { type: 0, id: orderId };
   }
   wx.request({
-    url: 'https://api.it120.cc/' + app.globalData.subDomain + '/pay/wxapp/get-pay-data',
+    url: 'https://api.it120.cc/' + app.globalData.subDomain + '/pay/wx/wxapp',
+    method: 'POST',
+    header: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: {
       token: wx.getStorageSync('token'),
-      money:money,
-      remark:remark,
-      payName:"在线支付",
-      nextAction:nextAction
+      money: money,
+      remark: remark,
+      payName: "在线支付",
+      nextAction: JSON.stringify(nextAction)
     },
-    //method:'POST',
     success: function(res){
+      console.log(res)
       if(res.data.code == 0){
         // 发起支付
         wx.requestPayment({

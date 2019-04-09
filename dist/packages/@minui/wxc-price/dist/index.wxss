@@ -1,9 +1,12 @@
 .price,
-  .price__icon,
+  .price__icon{
+    display: inline-block;
+    line-height: 1;
+  }
   .price__count {
     display: inline-block;
-    line-height: 1rpx;
-    margin-left: 1rpx;
+    line-height: 1;
+    margin-left: -5rpx; 
   }
 
   .price__icon--sup,

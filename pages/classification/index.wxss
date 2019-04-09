@@ -213,7 +213,7 @@ page {
 .goods-container .goods .soldInfo .good-price-box .price {
   color: #ffa200;
   margin-top: 10rpx;
-  width: 120rpx;
+  width: 150rpx;
   font-size: 27rpx;
   font-weight: bold;
   line-height: 40rpx;
